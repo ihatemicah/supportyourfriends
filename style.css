@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter-UI', sans-serif;
     background-color: #090E15;
     color: #ffffff;
     font-size: 40px;
@@ -12,11 +12,20 @@ body {
     justify-content: center;
 }
 
-section {
+.overlay-section{
+    z-index:3;
+    position: absolute;
+}
+
+
+.text-section  {
+    opacity: .3;
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: 100px;
+
+    z-index: 1;
 }
 
 div{
