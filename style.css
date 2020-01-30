@@ -12,24 +12,43 @@ body {
     justify-content: center;
 }
 
-.overlay-section{
+
+div {
+    font-weight: 100;
+    /* transform: scale(0.2); */
+    transition: transform 0.2s;
+   }
+
+
+.overlay-section {
     z-index:3;
     position: absolute;
 }
 
 
 .text-section  {
-    opacity: .3;
+    opacity: .9;
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: 100px;
-
     z-index: 1;
 }
 
-div{
- font-weight: 100;
- /* transform: scale(0.2); */
- transition: transform 0.2s;
+.label-01 {
+    letter-spacing: .2rem;
+    font-size: .9rem;
+    color: #03a9f4;
+    font-weight: 500;
+    height: 2rem;
+}
+
+.title {
+    color:#fff;
+}
+
+.modifed-subtitle-width {
+
+    margin:auto;
+    width:60%
 }
