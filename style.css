@@ -34,7 +34,6 @@ div {
 
 .modifed-subtitle-width {
     margin:auto;
-    width:30%
 }
 
 .scroll-downs {
@@ -83,9 +82,6 @@ and (orientation : portrait) {
         margin-top: 50%;
         text-align:center;
     }
-    .modifed-subtitle-width {
-        margin:auto;
-        width:70%
-    }
+
 
  }
