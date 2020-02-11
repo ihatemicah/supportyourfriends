@@ -3,6 +3,8 @@ html {
     font-family: "Inter", sans-serif;
     background-color: #090E15;
     color: #ffffff;
+    overflow-x: hidden;
+    max-width:100%;
 }
 
 
@@ -38,51 +40,30 @@ div {
     margin:auto;
 }
 
-.scroll-downs {
-    position: absolute;
-    top: 90%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    
-    width :34px;
-    height: 55px;
-  }
-  .mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-  }
-  .scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-  }
+.description{
+  color:#fff;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+/* Had to implement this to override Bulma's default. */
+strong {
+  color:#fff;
+}
+
 
   .animejs-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: relative; */
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* z-index: 2; */
+    /* width: 100%; */
+    /* height: 100vh; */
     opacity: .3;
   }
 
   .animation-wrapper {
     width: 50%;
-    padding-bottom: 50%;
+    /* padding-bottom: 50%; */
   }
   
   .sphere-animation {
@@ -109,14 +90,19 @@ div {
 
 
 
-  @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15px); opacity: 0;}
-  }
+.video-section-01 {
+  padding: 5% 0 5% 0;
+  margin: 30% 0 30% 0;
+  position:relative;
+  z-index:1;
+  display:block;
+  text-align:center;
+  background: linear-gradient(180deg,#0b0b0c 0%,#131318 100%);
+}
 
 
-  
+
+
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
