@@ -1,12 +1,13 @@
 
 html {
-    font-family: "Inter", sans-serif;
     background-color: #090E15;
     color: #ffffff;
     overflow-x: hidden;
     max-width:100%;
 }
-
+body{
+  font-family: "Inter", sans-serif;
+}
 
 div {
     font-weight: 100;
@@ -63,7 +64,6 @@ strong {
 
   .animation-wrapper {
     width: 50%;
-    /* padding-bottom: 50%; */
   }
   
   .sphere-animation {
@@ -100,8 +100,40 @@ strong {
   background: linear-gradient(180deg,#0b0b0c 0%,#131318 100%);
 }
 
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-header-01 {
+  color:#fff;
+  text-align:center;
+  font-weight:600;
+  padding: 5% 0 2% 0;
+}
+.vouches{
+  padding: 0 0 0 0;
+}
+
+figcaption {
+  font-weight: 400;
+  color:#ffffff;
+}
 
 
+.call-to-action-01 {
+  padding: 5% 0 5% 0;
+  text-align: center;
+}
 
 @media only screen 
 and (min-device-width : 375px) 
