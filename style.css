@@ -2,11 +2,14 @@
 html {
     background-color: #090E15;
     color: #ffffff;
-    overflow-x: hidden;
-    max-width:100%;
+    /* max-width:100%; */
 }
 body{
   font-family: "Inter", sans-serif;
+  overflow-x: hidden ;
+  width: 100%;
+  box-sizing: border-box;
+  /* position: relative; */
 }
 
 div {
@@ -70,9 +73,9 @@ strong {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 580px;
-    height: 580px;
-    margin: -290px 0 0 -290px;
+    width: 20%;
+    height: 50%;
+    margin: -4% 0 0 -10%;
   }
   
   .sphere path {
@@ -145,7 +148,12 @@ and (orientation : portrait) {
         margin-top: 50%;
         text-align:center;
     }
-
+    .figure-mobile {
+      margin:auto;
+    }
+    .modifed-subtitle-width {
+      width: 80%;
+    }
 
  }
 
